@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"newtest\startup_stm32f303xc.o"
+"newtest\stm32f3xx_hal_pwr.o"
+"newtest\stm32f3xx_hal_gpio.o"
+"newtest\stm32f3xx_hal_flash_ex.o"
+"newtest\stm32f3xx_hal_pcd.o"
+"newtest\stm32f3xx_hal_rcc.o"
+"newtest\stm32f3xx_hal_tim_ex.o"
+"newtest\stm32f3xx_hal_i2c_ex.o"
+"newtest\stm32f3xx_hal_flash.o"
+"newtest\stm32f3xx_hal_spi.o"
+"newtest\stm32f3xx_hal_rcc_ex.o"
+"newtest\stm32f3xx_hal_dma.o"
+"newtest\stm32f3xx_hal_spi_ex.o"
+"newtest\stm32f3xx_hal_tim.o"
+"newtest\stm32f3xx_hal_i2c.o"
+"newtest\stm32f3xx_hal_pcd_ex.o"
+"newtest\stm32f3xx_hal_cortex.o"
+"newtest\stm32f3xx_hal.o"
+"newtest\stm32f3xx_hal_pwr_ex.o"
+"newtest\system_stm32f3xx.o"
+"newtest\main.o"
+"newtest\stm32f3xx_it.o"
+"newtest\stm32f3xx_hal_msp.o"
+--library_type=microlib --strict --scatter "newtest\newtest.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "newtest.map" -o newtest\newtest.axf
